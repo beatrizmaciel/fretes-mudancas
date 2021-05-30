@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- usamos o viewport para adaptar para o celular 
+        e initial-scale para sempre ficar proporcional-->
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Sr. Melo - Fretes e Mudanças</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&
+        family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <!-- Usamos o reset para apagar as configurações de estilo padrão do browser. Tem que ser antes
+        das outras folhas de estilo, para não apagar as modificações que queremos -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/chamada.css">
+        <link rel="stylesheet" href="css/destaques.css">
+        <link rel="stylesheet" href="css/sobre.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="css/institucional.css">
+        <link rel="stylesheet" href="css/rodape.css">
+    </head>
+
+    <body>
+    <header class="cabecalho container">
+        <!-- usando o emmet podemos usar header>img+nav>ul>li*6 e dar ctrl+espaço -->
+        <!-- usamos o svg porque é mais leve e é feita or cálculos, então ela não "distorce" -->
+        <img class="cabecalho__logo" src="img/truck-svgrepo-com.svg" alt="Logo Caminhão">
+        <nav class="cabecalho__navegacao">
+            <ul>
+                <li class="cabecalho__link"><a href="#">Inicial</a></li>
+                <li class="cabecalho__link"><a href="#destaque">Caminhão</a></li>
+                <li class="cabecalho__link"><a href="#sobre">Sobre</a></li>
+                <li class="cabecalho__link"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chamada container">
+            <h1 class="chamada__titulo">Fretes e Mudanças</h1>
+            <p class="chamada__texto">Sr. Luiz Melo<br>
+                <img src="img/whatsapp.png" class="whatsapp"/>
+                (21) 99351 0405 &emsp; (21) 996609 1695 &emsp; (21) 993967822 &emsp;</p>
+            <a class="chamada__botao botao" href="https://api.whatsapp.com/send?phone=5521993510405&text=Gostaria%20de%20uma%20informa%C3%A7%C3%A3o%20sobre%20frete%20e%2Fou%20mudan%C3%A7a" 
+            target="_blank">Faça um orçamento</a>
+        </section>
+
+        <section class="destaques container">
+            <h2 class="destaques__titulo" id="destaque">Rio e Grande Rio</h2>
+            <a href="#">
+                <figure class="destaques__painel">
+                    <img src="img/caminhao.jpeg" alt="Painel do post sobre criação de logotipo" class="destaques__painel-imagem">
+                    <figcaption class="destaques__painel-texto">Nosso caminhão é coberto, permitindo fretes e mudanças em dias de chuva</figcaption>
+                </figure>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5521993510405&text=Gostaria%20de%20uma%20informa%C3%A7%C3%A3o%20sobre%20frete%20e%2Fou%20mudan%C3%A7a" 
+            class="destaques__botao__whatsapp" target="_blank"><img src="img/botao-whatsapp-verde-300x92.png"></a>
+        </section>
+        
+
+        <section class="sobre container" id="sobre">
+            <div class="sobre__conteudo">
+                <h2 class="sobre__titulo">Sobre</h2>
+                <p class="sobre__texto">
+                    Sr. Melo efetua mudanças  residenciais, mudanças  interestaduais, 
+                    mudanças comerciais, mudanças locais, mudanças empresariais .  
+                    Sofisticados e  modernos  materiais  de embalagem para mudanças, 
+                    pessoal  treinado, equipe operacional, experiência e responsabilidade. 
+                    Esta é a receita utilizada pelo Sr. Melo  mudanças para uma mudança 
+                    tranquila.
+                </p>
+            </div>
+        </section>
+
+        <section class="contato container" id="contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <p>Entre em contato com a gente</p>
+            <a href="https://api.whatsapp.com/send?phone=5521993510405&text=Gostaria%20de%20uma%20informa%C3%A7%C3%A3o%20sobre%20frete%20e%2Fou%20mudan%C3%A7a" 
+            target="_blank" class="contato__botao botao">Entre em contato</a>
+        </section>
+
+        <section class="institucional container">
+            <h2 class="institucional__titulo">Região</h2>
+            <div class="institucional__conteudo">
+                    <p class="institucional__descricao">Converse conosco para orçar distâncias.</p>
+                    <address class="institucional__endereco">
+                        Atendemos no</br>
+                        Rio e Grande Rio
+                        <article class="institucional__contato">
+                            <p><a href="tel:+5521993510405" class="institucional__contato-telefone" target="_blank">(21) 99351-0405</a> ou
+                                <a href="tel:+5521966091695" class="institucional__contato-telefone" target="_blank">(21) 96609-1695</a> ou
+                                <a href="tel:+5521993967822" class="institucional__contato-telefone" target="_blank">(21) 99396-7822</a></p>
+                        </article>
+                    </address>
+                </div>      
+        </section>
+        
+    </main>
+
+    <footer class="rodape container">
+        <img class="rodape__logo" src="img/truck-svgrepo-com.svg" alt="Logo Caminhão">
+        <div class="numeros__whatsapp">
+            <p><img src="img/whatsapp.png" class="whatsapp"/>
+                (21) 99351 0405 &emsp; (21) 9660 91695 &emsp; (21) 993967822 &emsp;</p>
+        </div>
+        <nav>
+            <ul class="rodape__navegacao">
+                <li class="rodape__link">
+                    <a href="#">Inicial</a>
+                </li>
+                <li class="rodape__link">
+                    <a href="#destaque">Caminhão</a>
+                </li>
+                <li class="rodape__link">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="rodape__link">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    </body>
+</html>
