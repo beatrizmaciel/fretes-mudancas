@@ -21,10 +21,9 @@
 }
 
 .contato__botao {
-    color: rgb(81, 163, 81);
+    color: black;
     font-size: large;
-    border-color: rgb(81, 163, 81);
-    border-width: 5px;
-
+    border-color: black;
+    border-width: 1px;
     margin-top: 1rem;
 }
