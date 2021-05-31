@@ -36,6 +36,11 @@
     width: 25px;
 }
 
+.chamada__whatsapp {
+    line-height: normal;
+    margin: 0 0 2.1rem;
+}
+
 @media screen and (max-width: 768px) {
     .chamada__whatsapp {
         font-size: 0.8rem;
